@@ -1,12 +1,5 @@
 import uvicorn
 from fastapi import FastAPI
-from pydantic import BaseModel
-
-
-class User(BaseModel):
-    first_name: str
-    last_name: str = None
-    age: float
 
 
 app = FastAPI()

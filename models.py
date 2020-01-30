@@ -9,7 +9,7 @@ def to_camel(string):
 class User(BaseModel):
     first_name: str
     last_name: str = None
-    age: float
+    age: int
 
     class Config:
         alias_generator = to_camel

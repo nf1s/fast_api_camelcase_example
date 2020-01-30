@@ -6,7 +6,7 @@ from models import User
 app = FastAPI()
 
 
-@app.post("/user/")
+@app.post("/user/", response_model=User)
 async def create_user(user: User):
     return user
 
